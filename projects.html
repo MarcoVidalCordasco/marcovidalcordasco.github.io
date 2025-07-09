@@ -3,88 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Publications - Marco Vidal-Cordasco</title>
+  <title>Proyectos - Marco Vidal-Cordasco</title>
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
+    :root {
+      --primary: #1e2a38;
+      --accent: #4caf50;
+      --background: #f5f7fa;
+      --text: #333;
+      --card-bg: #ffffff;
+      --card-shadow: rgba(0, 0, 0, 0.1);
     }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
     header {
-      background-color: #1e2a38;
+      background-color: var(--primary);
       color: white;
       padding: 20px;
       text-align: center;
     }
+
     nav a {
-      margin: 0 15px;
       color: white;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
-      padding: 40px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    ul {
-      list-style-position: inside;
-      padding-left: 0;
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 30px;
     }
-    li {
-      margin-bottom: 15px;
+
+    .card {
+      background: var(--card-bg);
+      box-shadow: 0 4px 8px var(--card-shadow);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .category {
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Projects</h1>
+    <h1>Proyectos</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html">Inicio</a>
     </nav>
   </header>
 
-<section id="Projects">
-  <h2>Projects</h2>
-  
-  <h3>Ongoing</h3>
-  <ul style="list-style-position: inside; padding-left: 0;">
-  <li style="margin-bottom: 15px;">
-      <a href="projects/Subsilience.html" target="_blank">
-        2021-2025 - Subsistence and human resilience to sudden climatic events in Europe during MIS3 - European Research Council - €2,000,000 - P.I.: Ana B. Marín-Arroyo 
-      </a>
-    </li>
-     <li style="margin-bottom: 15px;">
-      <a href="projects/Shiftingroles.html" target="_blank">
-        2025-2027 - Shifting the human role in ecosystems: impact biodiversity erosion on the Late Pleistocene and Early Holocene human populations in northern Iberia- Wenner-gren Foundation - $ 24,131 - P.I.: Vidal-Cordasco, M.
-      </a>
-    </li>
-       <li style="margin-bottom: 15px;">
+  <section>
+    <h2>Proyectos</h2>
+
+    <div class="category">
+      <h3>En curso</h3>
+
+      <div class="card">
+        <a href="projects/Subsilience.html" target="_blank">
+          2021–2025 - Subsistence and human resilience to sudden climatic events in Europe during MIS3
+        </a>
+        <p>European Research Council - €2,000,000 – P.I.: Ana B. Marín-Arroyo</p>
+      </div>
+
+      <div class="card">
+        <a href="projects/Shiftingroles.html" target="_blank">
+          2025–2027 - Shifting the human role in ecosystems
+        </a>
+        <p>Wenner-Gren Foundation - $24,131 – P.I.: Vidal-Cordasco, M.</p>
+      </div>
+
+      <div class="card">
         <a href="projects/Kaite_Palarq.html" target="_blank">
-        2024-2025 - Subsistence strategies of the last Neanderthal populations in Cueva de Kaite (Burgos) - Fundación Palarq - € 3,680 - P.I.: Vidal-Cordasco, M. & Ortega, A.
-      </a>
-    </li>
-  </ul>
+          2024–2025 - Subsistence strategies of the last Neanderthal populations in Cueva de Kaite
+        </a>
+        <p>Fundación Palarq - €3,680 – P.I.: Vidal-Cordasco, M. & Ortega, A.</p>
+      </div>
+    </div>
 
-  
-  <h3>Completed</h3>
-  <ul>
-    <li>
-      <a href="projects/project3.html" target="_blank">
-       ... in progress...
-      </a>
-    </li>
-    <li>
-      <a href="projects/project4.html" target="_blank">
-         ... in progress...
-      </a>
-    </li>
-  </ul>
-</section>
+    <div class="category">
+      <h3>Completados</h3>
 
+      <div class="card">
+        <a href="projects/project3.html" target="_blank">... en desarrollo ...</a>
+      </div>
+
+      <div class="card">
+        <a href="projects/project4.html" target="_blank">... en desarrollo ...</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
-
-
-
-
- 
-
-    <a href="index.html">Home</a>
