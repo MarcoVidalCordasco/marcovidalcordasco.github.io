@@ -1,96 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marco Vidal-Cordasco, PhD </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marco Vidal-Cordasco, PhD</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
       margin: 0;
       padding: 0;
+      color: #333;
     }
     header {
       background-color: #1e2a38;
       color: white;
       padding: 20px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
     nav a {
       margin: 0 15px;
       color: white;
       text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #4caf50;
     }
     section {
-      padding: 40px;
+      max-width: 900px;
+      background: white;
+      margin: 30px auto;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    img {
-  max-width: 200px;
-  border-radius: 10px;
-}
+    #About\ me {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    #About\ me > div:first-child {
+      flex: 1 1 400px;
+      min-width: 280px;
+    }
+    #About\ me img {
+      flex: 0 0 350px;
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    a {
+      color: #4caf50;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #Contact p {
+      font-size: 1.1rem;
+    }
 
-.bio-pic {
-  width: 350px;
-  max-width: none;  /* elimina la limitación */
-  border-radius: 10px;
-}
-    
+    /* Responsive */
+    @media (max-width: 700px) {
+      #About\ me {
+        flex-direction: column;
+        align-items: center;
+      }
+      #About\ me > div:first-child, #About\ me img {
+        flex: none;
+        width: 100%;
+        max-width: none;
+      }
+      section {
+        margin: 20px 10px;
+        padding: 20px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 10px 8px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Marco Vidal-Cordasco</h1>
-  <nav>
-  <a href="#sobre-mi">About me</a>
-  <a href="projects.html">Projects</a>
-  <a href="publications.html">Publications</a>
-  <a href="#posts">Posts & News</a>
-  <a href="#contacto">Contact</a>
-</nav>
-
-
-    
+    <nav>
+      <a href="#About me">About me</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="#posts">Posts &amp; News</a>
+      <a href="#Contact">Contact</a>
+    </nav>
   </header>
 
-<section id="About me">
-  <h2>About me</h2>
-  <div style="display: flex; align-items: flex-start; gap: 20px;">
-    <div style="flex: 1;">
+  <section id="About me">
+    <div>
+      <h2>About me</h2>
       <p>
         Post-doc at the EvoAdapta group, University of Cantabria.<br>
         Strong advocate for open data and code.<br>
         Always curious.<br><br>
         Ecosystems are not merely static backdrops for human activity, but dynamic and complex systems in which humans are active agents, often leaving long-term legacies across the terrestrial biosphere. I am interested in understanding these dynamics during the Palaeolithic by integrating archaeological data—such as archaeozoology, palynology, and sedaDNA—into computational approaches.
-      <br><br>
-      In the Projects section, you’ll find all the projects I am currently involved in, as well as those I have participated in.
-      Each project links to a dedicated page detailing my specific contributions (for completed projects) or the current status and progress (for ongoing ones).
-      <br><br>
-      In the Posts & News section, you’ll find my reflections and commentary on recent discoveries I consider especially relevant to Prehistory, human evolution, and paleoecology.
       </p>
-
-      <!-- Links -->
+      <p>
+        In the Projects section, you’ll find all the projects I am currently involved in, as well as those I have participated in.<br>
+        Each project links to a dedicated page detailing my specific contributions (for completed projects) or the current status and progress (for ongoing ones).
+      </p>
+      <p>
+        In the Posts &amp; News section, you’ll find my reflections and commentary on recent discoveries I consider especially relevant to Prehistory, human evolution, and paleoecology.
+      </p>
       <p>
         🔗 
-        <a href="https://orcid.org/0000-0002-0595-0633" target="_blank">ORCID</a> | 
-        <a href="https://www.researchgate.net/profile/Marco-Vidal-Cordasco" target="_blank">ResearchGate</a> | 
-        <a href="https://bsky.app/profile/marcovidalcordasco.bsky.social" target="_blank">Bluesky</a>
+        <a href="https://orcid.org/0000-0002-0595-0633" target="_blank" rel="noopener noreferrer">ORCID</a> | 
+        <a href="https://www.researchgate.net/profile/Marco-Vidal-Cordasco" target="_blank" rel="noopener noreferrer">ResearchGate</a> | 
+        <a href="https://bsky.app/profile/marcovidalcordasco.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
       </p>
     </div>
-<img src="img/1.jpeg" alt="From left to right: Me, Ana I. Ortega and Borja González-Rabanal at Cueva Palomera. 2025" class="bio-pic">
-  </div>
-</section>
-
-
-
-
-  
+    <img src="img/1.jpeg" alt="From left to right: Me, Ana I. Ortega and Borja González-Rabanal at Cueva Palomera. 2025" />
+  </section>
 
   <section id="Contact">
     <h2>Contact</h2>
-    <p>Mail: <a href="mailto:marcovidalcordasco@gmail.com">marcovidalcordasco@gmail.com</a></p>
-    <p>Mail: <a href="mailto:vidalma@unican.es">vidalma@unican.es</a></p>
+    <p>Email: <a href="mailto:marcovidalcordasco@gmail.com">marcovidalcordasco@gmail.com</a></p>
+    <p>Email: <a href="mailto:vidalma@unican.es">vidalma@unican.es</a></p>
   </section>
 </body>
 </html>
-
-
