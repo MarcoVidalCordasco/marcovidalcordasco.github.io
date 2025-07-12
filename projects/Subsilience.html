@@ -28,11 +28,72 @@
 
     header {
       margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      grid-template-rows: auto auto auto auto auto auto;
+      column-gap: 20px;
+      align-items: start;
+    }
+
+    /* Cada párrafo en una fila diferente para facilitar la alineación */
+    header p {
+      margin: 0.3em 0;
     }
 
     h1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
       font-size: 2.5em;
       margin-bottom: 0.2em;
+    }
+
+    /* Ponemos los párrafos en filas individuales */
+    .desc {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .funding {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .pi {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+    }
+
+    .links1 {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+      margin-top: 1em;
+    }
+
+    .links2 {
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      margin-top: 0.5em;
+    }
+
+    figure {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4; /* Alineamos la imagen a la altura del Funding */
+      margin: 0;
+      text-align: center;
+      align-self: start; /* Alínea la imagen arriba */
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      font-style: italic;
+      margin-top: 8px;
     }
 
     h2 {
@@ -76,22 +137,17 @@
 <body>
   <header>
     <h1>Subsilience</h1>
-    <p><strong>2021–2025</strong> – Subsistence and human resilience to sudden climatic events in Europe during Marine Isotope Stage 3 (MIS3).</p>
-    <p><strong>Funding:</strong> European Research Council – €2,000,000</p>
-    <p><strong>Principal Investigator:</strong> Ana B. Marín-Arroyo</p>
-    <p><a href="/projects.html" class="back-link">Back to project list</a></p>
-    <p><a href="/index.html" class="back-link">Home</a></p>
-  </header>
+    <p class="desc"><strong>2021–2025</strong> – Subsistence and human resilience to sudden climatic events in Europe during Marine Isotope Stage 3 (MIS3).</p>
+    <p class="funding"><strong>Funding:</strong> European Research Council – €2,000,000</p>
+    <p class="pi"><strong>Principal Investigator:</strong> Ana B. Marín-Arroyo</p>
+    <p class="links1"><a href="/projects.html" class="back-link">Back to project list</a></p>
+    <p class="links2"><a href="/index.html" class="back-link">Home</a></p>
 
-  <!-- Imagen justo debajo del header, antes del contenido principal -->
-  <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
-    <figure style="max-width: 300px; text-align: center; margin: 0;">
-      <img src="/img/me&AnaB.png" alt="Me and Ana B. Marín Arroyo" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-      <figcaption style="font-size: 0.9em; font-style: italic; margin-top: 8px;">
-        Me (left) and Ana B. Marín Arroyo (right)
-      </figcaption>
+    <figure>
+      <img src="/img/me&AnaB.png" alt="Me and Ana B. Marín Arroyo" />
+      <figcaption>Me (left) and Ana B. Marín Arroyo (right)</figcaption>
     </figure>
-  </div>
+  </header>
 
   <main>
     <section>
@@ -140,3 +196,4 @@
   </footer>
 </body>
 </html>
+
