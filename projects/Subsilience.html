@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Subsilience - Project</title>
   <style>
     body {
@@ -9,6 +10,9 @@
       padding: 20px;
       background-color: #f5f7fa;
       color: #333;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
     }
 
     a {
@@ -16,8 +20,10 @@
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
       text-decoration: underline;
+      outline: none;
     }
 
     header {
@@ -25,40 +31,100 @@
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
     }
 
-    p {
-      line-height: 1.6;
+    h2 {
+      color: #1e2a38;
+      margin-top: 2em;
+      margin-bottom: 0.8em;
+      border-bottom: 2px solid #4caf50;
+      padding-bottom: 0.3em;
+    }
+
+    p, ul {
+      font-size: 1.1em;
+    }
+
+    ul {
+      padding-left: 1.3em;
+    }
+
+    ul li {
+      margin-bottom: 1em;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+
+    .back-link::before {
+      content: "← ";
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Subsilience</h1>
-    <p><strong>2021–2025</strong> – Subsistence and human resilience to sudden climatic events in Europe during MIS3</p>
+    <p><strong>2021–2025</strong> – Subsistence and human resilience to sudden climatic events in Europe during Marine Isotope Stage 3 (MIS3).</p>
     <p><strong>Funding:</strong> European Research Council – €2,000,000</p>
     <p><strong>Principal Investigator:</strong> Ana B. Marín-Arroyo</p>
-    <p> <a href="/projects.htm">← Back to project list</a></p>
-   
-
+    <p><a href="/projects.htm" class="back-link">Back to project list</a></p>
   </header>
 
   <main>
-    <h2>Project Overview</h2>
-    <p>This project investigates how human populations during the Middle and Upper Paleolithic in Europe responded to abrupt climatic events during Marine Isotope Stage 3 (MIS3).</p>
-    
-    <h2>Objectives</h2>
-    <ul>
-      <li>Analyze archaeological evidence of resilience and human adaptation.</li>
-      <li>Reconstruct paleoenvironments and subsistence strategies.</li>
-      <li>Compare cultural responses across different European regions.</li>
-    </ul>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This project (Grant Agreement No. 818299 — ERC-2018-Consolidator) investigates whether the replacement of Neanderthals by <em>Homo sapiens</em> was influenced by the abrupt climatic events during Marine Isotope Stage 3 (MIS3).
+        For more details, visit the <a href="https://www.subsilience.eu/project/" target="_blank" rel="noopener noreferrer">official project website</a>.
+      </p>
+    </section>
 
-    <h2>Publications / Results</h2>
-    <p>Links to publications and key outcomes will be added soon.</p>
+    <section>
+      <h2>My Contributions</h2>
+      <ul>
+        <li>
+          Since 2021, I have developed a novel methodology to estimate herbivore carrying capacity during MIS3, based on: (1) net primary productivity estimated using the dynamic vegetation model LPJ-GUESS, (2) the number and types of herbivore species in each paleocommunity, and (3) the body size of these species. This method was validated with over 600 herbivore density surveys worldwide.
+        </li>
+        <li>
+          I analyzed these carrying capacity estimates in the context of the Middle to Upper Paleolithic transition in Iberia and Europe, complementing traditional Bayesian age models with Optimal Linear Estimations—a method borrowed from Ecology recently applied in archaeology to estimate extinction times.
+        </li>
+        <li>
+          The results indicate that regional differences in Neanderthal disappearance and <em>Homo sapiens</em> arrival were not random: regions with higher carrying capacity of medium-sized herbivores saw longer Neanderthal persistence and earlier arrival of <em>Homo sapiens</em>, resulting in prolonged coexistence between the species.
+        </li>
+        <li>
+          For more details, see these publications:
+          <ul>
+            <li><a href="https://www.nature.com/articles/s41559-022-01861-5" target="_blank" rel="noopener noreferrer">Nature Ecology & Evolution (2022)</a></li>
+            <li><a href="https://www.science.org/doi/10.1126/sciadv.adi4099" target="_blank" rel="noopener noreferrer">Science Advances</a></li>
+          </ul>
+        </li>
+        <li>
+          I also built Species Distribution Models (GLM, GAM, MaxEnt, and BART) for primary and secondary consumer species, analyzing fluctuations in habitat favorability relative to their co-occurrence patterns. This work, currently under review, shows that the arrival of <em>Homo sapiens</em> significantly altered previous species co-occurrence networks by simplifying their structure.
+        </li>
+        <li>
+          My latest contribution is an Agent-Based Model integrating carrying capacity estimates and potential spatial distributions (based on SDMs) to assess whether climate or the arrival of <em>Homo sapiens</em> was the main driver of Neanderthal demise in Europe. This study is also under review.
+        </li>
+      </ul>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Marco Vidal-Cordasco</p>
+  </footer>
 </body>
 </html>
+
 
 
