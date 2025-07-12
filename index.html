@@ -127,7 +127,7 @@
         <a href="https://bsky.app/profile/marcovidalcordasco.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
       </p>
     </div>
-    <img src="img/1.jpeg" alt="From left to right: Me, Ana I. Ortega and Borja González-Rabanal at Cueva Palomera. 2025" />
+    <img id="slideshow" src="img/1.jpeg" alt="From left to right: Me, Ana I. Ortega and Borja González-Rabanal at Cueva Palomera. 2025" />
   </section>
 
   <section id="Contact">
@@ -135,6 +135,30 @@
     <p>Email: <a href="mailto:marcovidalcordasco@gmail.com">marcovidalcordasco@gmail.com</a></p>
     <p>Email: <a href="mailto:vidalma@unican.es">vidalma@unican.es</a></p>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Marco Vidal-Cordasco</p>
+  </footer>
+
+  <script>
+    const images = [
+      "img/1.jpeg",
+      "img/2.jpeg",
+      "img/3.jpeg",
+      "img/4.jpeg",
+      "img/5.jpeg",
+      "img/6.jpeg"
+    ];
+    let currentIndex = 0;
+    const slideshow = document.getElementById("slideshow");
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      slideshow.src = images[currentIndex];
+    }
+
+    setInterval(nextImage, 2000); // Cambia cada 2 segundos
+  </script>
     <footer>
     <p>&copy; 2025 Marco Vidal-Cordasco</p>
   </footer>
