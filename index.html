@@ -5,10 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Marco Vidal-Cordasco, PhD</title>
   <style>
-    .slideshow-img {
-  width: 350px !important;
-  height: 150px !important;
+ .fixed-img {
+  width: 350px;
+  height: 300px;    /* taller */
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
+
+.slideshow-img {
+  width: 350px;
+  height: 150px;    /* shorter */
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
 
     body {
       font-family: Arial, sans-serif;
@@ -137,8 +150,12 @@
 
    <!-- Wrap both images in a single right-side container -->
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="img/5.jpg" alt="Static Image" style="margin-bottom: 20px; border-radius: 10px;width: 350px; height: 300px; object-fit: cover;" />
-<img id="slideshow" class="slideshow-img" src="img/1.jpeg" alt="Slideshow Image" style="border-radius: 10px; object-fit: cover;" />
+<!-- Fixed image -->
+<img src="img/5.jpg" alt="Static Image" class="fixed-img" />
+
+<!-- Slideshow image -->
+<img id="slideshow" class="slideshow-img" src="img/1.jpeg" alt="Slideshow Image" />
+
 
   </div>
 </section>
